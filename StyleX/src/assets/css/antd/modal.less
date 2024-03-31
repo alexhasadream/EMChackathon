@@ -1,0 +1,20 @@
+@import '../scroll.less';
+
+.modal_mixin() {
+    .ant-modal {
+        &-close {
+            color: @theme_color !important;
+
+            &:hover {
+                color: @theme_color_hover !important;
+            }
+        }
+
+        &-header {
+            .ant-modal-title {
+                color: @theme_color;
+                font-size: 15px;
+            }
+        }
+    }
+}
